@@ -3,18 +3,19 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
   /*========== Colors ==========*/
-  --main-color: #323f47;
+  --main-color: rgb(50, 63, 71);
+  --main-color-rgba: rgba(50, 63, 71, 0.3);
   --main-text-rgb: rgb(47, 47, 47);
   --main-text-alpha: rgba(var(--main-text-rgb), 0.5);
   --main-text-alpha: rgba(var(--main-text-rgb), 0.6);
   --accent-color: #9be1a0;
   --accent-color-hover: #87d28d;
-  --background-white: #f0eff4;
+  --background-white: rgb(240, 239, 244);
   --main-white: #fff;
 
   /*========== Font and typography ==========*/
   /* Poppins regular - 400,bold - 700 */
-  --main-font: 'Poppins', sans-serif;
+  --font-family: 'Poppins', sans-serif;
   /* Gilroy regular - 400, bold - 700 */
   --second-font: 'Gilroy', sans-serif;
 
@@ -130,36 +131,4 @@ img {
 .section__subtitle {
   font-size: var(--h4-font-size);
   margin-bottom: 1.5rem;
-}
-
-/*==================== LAYOUT ====================*/
-.container {
-  max-width: 100%;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-/*==================== MEDIA QUERIES LAYOUT ====================*/
-
-/* For small devices */
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 343px;
-    padding: 0 1rem;
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    padding: 0 2rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1376px;
-  }
 }
